@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="/">
+                <img src="img/icons/logo-b.svg" alt="">
+            </a>
+
+            <div class="header-buuton-block selected-city">
+                <a href="#" class="button">
+                    <img src="img/png/marker.png" alt="">
+                    <p>
+                        Нижний Новгород
+                    </p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="tabs-block active-third">
+                <div class="tab-item active">
+                    <p class="text">Кадастр</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>1</span>
+                    </p>
+                </div>
+                <div class="tab-item active">
+                    <p class="text">Анкета объекта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>2</span>
+                    </p>
+                </div>
+                <div class="tab-item active">
+                    <p class="text">Аналоги</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>3</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Оплата</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>4</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Получение расчёта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>5</span>
+                    </p>
+                </div>
+            </div>
+            <div class="analogs-block main-block">
+                <p class="main-block__title">
+                    Я проставил корректировки, но вы можете их исправить
+                </p>
+                <p class="main-block__discription">
+                    Нажмите на поле корректировки, чтобы изменить её значение.
+                    Вы можете отключить ненужную корректировку, нажав на
+                    <img src="img/png/toggler.png" alt="">
+                </p>
+                <div class="table-container table-container_sticky" id="scrollBlock2">
+                    <div class="table-heading-block" >
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <div class="title">Ваш объект</div>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="table-container correct-block " id="scrollBlock1">
+                    <!-- Блок с вертикальными полосками start, .stripe = количество объектов  -->
+                    <div class="stripes-block" >
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                    </div>
+                    <!-- Блок с вертикальными полосками end  -->
+
+                    
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Общие корректировки</p>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на торг
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title inactive">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на дату предложения
+                        </p>
+                        <div class="table-discription disabled">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на местоположение
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title inactive">
+                            <span class="switch disabled">
+                                <label>
+                                    <input type="checkbox" >
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на неполное право на квартиру (пока недоступно)
+                        </p>
+                        <div class="table-discription disabled">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title inactive">
+                            <span class="switch disabled">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на передаваемые права (пока недоступно)
+                        </p>
+                        <div class="table-discription disabled">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Особенности квартиры</p>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на этаж  расположения объекта
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на общую площадь квартиры
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на площадь кухни
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на изолированность/смежность комнат
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на вид из окна квартиры
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на наличие мебели и техники
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Техника, мебель
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Мебель
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Техника
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Нет
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Техника, мебель
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Техника, мебель
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на наличие балкона и лоджии
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Балкон
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Лоджия
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Балкон
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Лоджия
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Балкон
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Лоджия
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на тип санузла
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на класс качества отделки и инженерных коммуникаций квартиры
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на износ отделки и инженерных коммуникаций квартиры
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на тип плиты
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Особенности дома</p>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на наличие балкона и лоджии
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Название материала
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на газовую колонку / центральное горячее водоснабжение
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на площадь кухни
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>кв.м
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            мусоропровод
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на благоустройство придомовой территории
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Есть
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            на состояние (износ) дома
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Корректировка">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Транспортная доступность</p>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">
+                            <span class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </span>
+                            расстояние до остановки
+                        </p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                                <input type="text" class="analog-input withIcon" placeholder="Укажите">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                </div>
+            </div>
+            <div class="table-button-block correct-button">
+
+                    <a href="#" class="button button_color">
+                        <p class="button-text">Применить корректировки и рассчитать стоимость</p>
+                    </a>
+                </div>
+
+
+
+        </main>
+    </div>
+
+    <div class="nav-helper container">
+        <a href="index.html" class="nav-helper__item">Стартовая</a>
+        <a href="start.html" class="nav-helper__item">Стартовая. Выбор города</a>
+        <a href="servise-start.html" class="nav-helper__item">Что будем оценивать?</a>
+        <a href="servise-start-error.html" class="nav-helper__item">Я не умею оценивать</a>
+        <a href="cadastre.html" class="nav-helper__item">Ввод кадастра</a>
+        <a href="cadastre-error.html" class="nav-helper__item">Кадастр не найден</a>
+        <a href="cadastre-correct.html" class="nav-helper__item">Кадарст найден</a>
+        <a href="worksheet.html" class="nav-helper__item">Анкета квартиры</a>
+        <a href="map.html" class="nav-helper__item">Карта</a>
+        <a href="analogs.html" class="nav-helper__item">Аналоги</a>
+        <a href="correct.html" class="nav-helper__item">Корректировки</a>
+        <a href="pay.html" class="nav-helper__item">оплата</a>
+        <a href="pay-form.html" class="nav-helper__item">оплата2</a>
+        <a href="final.html" class="nav-helper__item">финал</a>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

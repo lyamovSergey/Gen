@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <a href="/">
+                <img src="img/icons/logo-b.svg" alt="">
+            </a>
+            
+            <div class="header-buuton-block selected-city">
+                <a href="#" class="button">
+                    <img src="img/png/marker.png" alt="">
+                    <p>
+                        Нижний Новгород
+                    </p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="tabs-block active-first">
+                <div class="tab-item active">
+                    <p class="text">Кадастр</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>1</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Анкета объекта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>2</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Аналоги</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>3</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Оплата</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>4</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Получение расчёта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>5</span>
+                    </p>
+                </div>
+            </div>
+            <div class="cadastre-block">
+                <p class="cadastre-bloc__title">
+                    Давайте оценим квартиру
+                    <a href="#" class="back">Выбрать другой объект</a>
+                </p>
+                <p class="cadastre-block__discription">Введите кадастровый номер: это поможет мне заполнить<br>
+                    часть полей в анкете объекта, чтобы сэкономить ваше время
+                </p>
+                <form class="cadastre-form">
+                    <div class="input-field">
+                        
+                        <input type="text" id="autocomplete-input" class="number input-item">
+                        <label for="autocomplete-input">Номер кадастра</label>
+                    </div>
+                    <button class="submitBtn button_color">
+                        <p class="button-text">Найти объект по кадастру</p>
+                    </button>
+                    <a href="#" class="continue">Продолжить без кадастрового номера</a>
+                </form>
+                
+            </div>
+
+        </main>
+    </div>
+    <div class="nav-helper container">
+        <a href="index.html" class="nav-helper__item">Стартовая</a>
+        <a href="start.html" class="nav-helper__item">Стартовая. Выбор города</a>
+        <a href="servise-start.html" class="nav-helper__item">Что будем оценивать?</a>
+        <a href="servise-start-error.html" class="nav-helper__item">Я не умею оценивать</a>
+        <a href="cadastre.html" class="nav-helper__item">Ввод кадастра</a>
+        <a href="cadastre-error.html" class="nav-helper__item">Кадастр не найден</a>
+        <a href="cadastre-correct.html" class="nav-helper__item">Кадарст найден</a>
+        <a href="worksheet.html" class="nav-helper__item">Анкета квартиры</a>
+        <a href="map.html" class="nav-helper__item">Карта</a>
+        <a href="analogs.html" class="nav-helper__item">Аналоги</a>
+        <a href="correct.html" class="nav-helper__item">Корректировки</a>
+        <a href="pay.html" class="nav-helper__item">оплата</a>
+        <a href="pay-form.html" class="nav-helper__item">оплата2</a>
+        <a href="final.html" class="nav-helper__item">финал</a>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

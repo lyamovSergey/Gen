@@ -1,0 +1,23 @@
+// Отключить ховеры на планшетах
+@media screen and (min-width: 992px){
+    header{
+        .header-bottom{
+            .header-menu{
+                li{
+                    .header__submenu{
+                        .header-submenu-col{
+                            .header-submenu-col__img{
+                                &:hover{
+                                    .shadow-block{
+                                        opacity: 1;
+                                        transition: .3s;
+                                    } 
+                                }
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    }
+}

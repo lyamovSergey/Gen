@@ -1,0 +1,28 @@
+# files
+.DS_Store
+Thumbs.db
+*.tar.gz*
+*.js.orig
+*.js.base
+*.css.orig
+*.css.base
+/.idea/*
+/.vscode/
+# core
+/.htaccess
+/node_modules/
+/dist/
+app/js/main.js
+/package-lock.json
+/report.*.json
+
+
+*.js.orig
+*.js.base
+*.php.orig
+*.php.base
+*.css.orig
+*.css.base
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*

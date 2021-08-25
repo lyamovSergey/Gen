@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?7335fa50-1c46-4dc3-9366-4a801ff36f50&lang=ru_RU"
+        type="text/javascript">
+        </script>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="/">
+                <img src="img/icons/logo-b.svg" alt="">
+            </a>
+
+            <div class="header-buuton-block selected-city">
+                <a href="#" class="button">
+                    <img src="img/png/marker.png" alt="">
+                    <p>
+                        Нижний Новгород
+                    </p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="tabs-block active-third">
+                <div class="tab-item active">
+                    <p class="text">Кадастр</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>1</span>
+                    </p>
+                </div>
+                <div class="tab-item active">
+                    <p class="text">Анкета объекта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>2</span>
+                    </p>
+                </div>
+                <div class="tab-item active">
+                    <p class="text">Аналоги</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>3</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Оплата</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>4</span>
+                    </p>
+                </div>
+                <div class="tab-item">
+                    <p class="text">Получение расчёта</p>
+                    <p class="num num_empty"></p>
+                    <p class="num num_current">
+                        <span>5</span>
+                    </p>
+                </div>
+            </div>
+            <div class="analogs-block main-block">
+                <p class="main-block__title">
+                    Я сравнил
+                    <span class="analogs"> 6 </span>
+                    <span>выбранных аналогов</span>
+                    <a href="#" class="addAnalog" id="addAnalog">
+                        <img src="img/png/addAnalog.png" alt="">
+                    </a>
+                </p>
+                <p class="main-block__discription">
+                    Вы можете удалять и добавлять аналоги к сравнению.
+
+                </p>
+                <div class="table-container table-container_sticky" id="scrollBlock2">
+                    <div class="table-heading-block" >
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <div class="title">Ваш объект</div>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="table-container" id="scrollBlock1">
+                    <!-- <div class="table-heading-block" id="stickyHeader">
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <div class="title">Ваш объект</div>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+                        <div class="table-container__col img-block">
+                            <div class="delBtn"></div>
+                            <img class="flat-img" src="img/png/flat.png" alt="">
+                            <p class="title">Ваш объект</p>
+                            <p class="adress">от 22.08.21, ЦИАН</p>
+                        </div>
+
+                    </div> -->
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">Местоположение</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">Нижний
+                                    Новгород, ул.
+                                    Бориса Видяева19, кв 23</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Особенности квартиры</p>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">Общая площадь</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">ЖИЛАЯ площадь</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">площадь КУХНИ</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" value="12" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">58.5</span>кв м
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">ТИП КВАРТИРЫ</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Полногабаритная
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2</span>комнаты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2</span>комнаты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2</span>комнаты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2</span>комнаты
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1</span>санузел
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1</span>санузел
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1</span>санузел
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1</span>санузел
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">изолированность комнат</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Смежные
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Изолированные
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Изолированные
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Изолированные
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Изолированные
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">ремонт</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Евроремонт
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Евроремонт
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <select class="analog-select">
+                                    <option value="1" disabled>Выберите</option>
+                                    <option value="2" selected>евроремонт</option>
+                                    <option value="3">евроремонт</option>
+                                </select>
+                            </div>
+                            <div class="table-container__col">
+                                <select class="analog-select">
+                                    <option value="1" disabled selected>Выберите</option>
+                                    <option value="2">евроремонт</option>
+                                    <option value="3">евроремонт</option>
+                                </select>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Евроремонт
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    Евроремонт
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">вид из окон</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/panorama.svg" alt="">
+                                        Панорамный
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/panorama.svg" alt="">
+                                        Панорамный
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/Garden.svg" alt="">
+                                        Во двор
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/panorama.svg" alt="">
+                                        Панорамный
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <p class="table-row__title">в квартире есть</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lodjiya.svg" alt="">
+                                        Лоджия
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/technics.svg" alt="">
+                                        Техника
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/furniture.svg" alt="">
+                                        Мебель
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Особенности дома</p>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">год постройки</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">1999</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row ">
+                        <p class="table-row__title">этажей в доме</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">12</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">15</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">9</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">9</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">11</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">12</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">высота потолков</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>мм
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>мм
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>мм
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <input type="text" class="analog-input" placeholder="Укажите">
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">2400</span>мм
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row ">
+                        <p class="table-row__title">класс энергоэффективности</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">А++</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <p class="table-row__title">оснащенность дома и территории</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text icons-block">
+                                    <span class="img">
+                                        <img src="img/icons/lift1.svg" alt="">
+                                        Лифт пассажирский
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/trash.svg" alt="">
+                                        Мусоропровод
+                                    </span>
+                                    <span class="img">
+                                        <img src="img/icons/zabor.svg" alt="">
+                                        Огороженная терр-я
+                                    </span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="table-row table-row_spacer">
+
+                    </div>
+                    <div class="table-row table-row-title-block">
+                        <p class="title">Транспортная доступность</p>
+                    </div>
+                    <div class="table-row table-row_grey">
+                        <p class="table-row__title">до остановки</p>
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">400</span>метров
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-discription">
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                            <div class="table-container__col">
+                                <p class="table-col-text">
+                                    <span class="bold">4</span>минуты
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row del-block">
+                        <div class="table-discription">
+                            <div class="table-container__col">
+
+                            </div>
+                            <div class="table-container__col">
+                                <a href="#" class="button disabled">
+                                    <p class="button-text">Удалить аналог</p>
+                                </a>
+                            </div>
+                            <div class="table-container__col">
+                                <a href="#" class="button disabled">
+                                    <p class="button-text">Удалить аналог</p>
+                                </a>
+                            </div>
+                            <div class="table-container__col">
+                                <a href="#" class="button disabled">
+                                    <p class="button-text">Удалить аналог</p>
+                                </a>
+                            </div>
+                            <div class="table-container__col">
+                                <a href="#" class="button disabled">
+                                    <p class="button-text">Удалить аналог</p>
+                                </a>
+                            </div>
+                            <div class="table-container__col">
+                                <a href="#" class="button disabled">
+                                    <p class="button-text">Удалить аналог</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="table-button-block">
+                    <a href="#" class="button button_color">
+                        <p class="button-text">Перейти к корректировкам</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </main>
+        <div class="modal" id="modal">
+            <div id="delMap"></div>
+            <div class="modal-heading">
+                <a onclick="$.fancybox.close();" class="custom-close" href="javascript:;">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0651 13.999L27.4827 2.30286C27.7322 2.04542 27.8701 1.6999 27.8664 1.34142C27.8626 0.982947 27.7176 0.640366 27.4628 0.388181C27.3369 0.263491 27.1876 0.165054 27.0234 0.0984201C26.8592 0.0317858 26.6834 -0.00162656 26.5062 6.08688e-05C26.329 0.0017483 26.154 0.0385289 25.9911 0.108278C25.8282 0.178027 25.6808 0.279281 25.5573 0.406347L14.1596 12.0844L2.29007 0.388181C2.16412 0.263601 2.01478 0.165207 1.85061 0.0986416C1.68644 0.0320762 1.51071 -0.00129394 1.33356 0.000393164C1.15641 0.00208027 0.981322 0.0388195 0.818448 0.1085C0.655573 0.17818 0.508135 0.27939 0.384582 0.406347C0.134857 0.663552 -0.00333667 1.00898 6.12078e-05 1.36745C0.00345908 1.72593 0.148137 2.06849 0.402692 2.32092L12.255 13.999L0.402692 25.677C0.148137 25.9295 0.00345908 26.2721 6.12078e-05 26.6306C-0.00333667 26.9891 0.134857 27.3345 0.384582 27.5917C0.50801 27.7189 0.655391 27.8203 0.818282 27.8901C0.981172 27.9599 1.15635 27.9968 1.33356 27.9984C1.51077 28.0001 1.68653 27.9667 1.85072 27.9C2.01491 27.8333 2.16424 27.7346 2.29007 27.6098L14.1596 15.9137L25.5573 27.5917C25.6823 27.7209 25.832 27.8236 25.9976 27.8938C26.1631 27.9639 26.3411 28 26.5209 28C26.6962 28.0007 26.8699 27.9665 27.0319 27.8995C27.1939 27.8325 27.341 27.734 27.4646 27.6098C27.7194 27.3576 27.8644 27.0151 27.8681 26.6566C27.8719 26.2982 27.734 25.9526 27.4845 25.6952L16.0651 13.999Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-10.1206" y1="-30.8437" x2="37.0441" y2="-29.3044" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7AE05F"/>
+                        <stop offset="1" stop-color="#4EAF81"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                </a>
+
+                <p class="modal-heading__title">Добавить аналог</p>
+                <p class="modal-heading__text">Дайте мне ссылку на объявление аналога, чтобы я заполнил анкету</p>
+                <div class="feedback-block">
+                    <form>
+                        <input type="email" class="email" placeholder="Ссылка на объявление">
+                        <button type="submit" class="submitBtn button_colorGreen">
+                            <p class="button-text">Добавить аналог</p>
+                        </button>
+                    </form>
+                    <a href="#" class="back">Хочу заполнить анкету аналога вручную</a>
+                </div>
+            </div>
+            <div class="modalMap-wrapper">
+                <p class="modalMap-wrapper__title">Или выберите еще аналоги из тех, что я нашел</p>
+                <div class="modalMap" id="madalMap"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-helper container">
+        <a href="index.html" class="nav-helper__item">Стартовая</a>
+        <a href="start.html" class="nav-helper__item">Стартовая. Выбор города</a>
+        <a href="servise-start.html" class="nav-helper__item">Что будем оценивать?</a>
+        <a href="servise-start-error.html" class="nav-helper__item">Я не умею оценивать</a>
+        <a href="cadastre.html" class="nav-helper__item">Ввод кадастра</a>
+        <a href="cadastre-error.html" class="nav-helper__item">Кадастр не найден</a>
+        <a href="cadastre-correct.html" class="nav-helper__item">Кадарст найден</a>
+        <a href="worksheet.html" class="nav-helper__item">Анкета квартиры</a>
+        <a href="map.html" class="nav-helper__item">Карта</a>
+        <a href="analogs.html" class="nav-helper__item">Аналоги</a>
+        <a href="correct.html" class="nav-helper__item">Корректировки</a>
+        <a href="pay.html" class="nav-helper__item">оплата</a>
+        <a href="pay-form.html" class="nav-helper__item">оплата2</a>
+        <a href="final.html" class="nav-helper__item">финал</a>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

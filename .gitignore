@@ -12,7 +12,6 @@ Thumbs.db
 /.htaccess
 /node_modules/
 /dist/
-app/js/main.js
 /package-lock.json
 /report.*.json
 

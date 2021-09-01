@@ -340,10 +340,15 @@ input[type=number]:not(.browser-default):focus:not([readonly]){
 input[type=text]:not(.browser-default).notEmpty,
 input[type=number]:not(.browser-default).notEmpty{
     border: 1px solid #3F0B81 !important;
+    color: #000000;
 }
 
 .select-wrapper.no-empty{
     border: 1px solid #3F0B81 !important;
+    color: #000000;
+    .select-dropdown.dropdown-trigger{
+        color: #000000;
+    }
 }
 .modal{
     max-width: 1000px;
